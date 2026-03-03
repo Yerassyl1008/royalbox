@@ -3,6 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 
+type HeaderProps = {
+  homeButtonClassName?: string;
+  mobileHomeButtonClassName?: string;
+};
+
 const navItems = [
   { label: "Как это работает", href: "#how" },
   { label: "Соцсети", href: "#social" },
@@ -10,15 +15,18 @@ const navItems = [
   { label: "Помощь", href: "#help" },
 ];
 
-export default function Header() {
+export default function Header({
+  homeButtonClassName = "bg-[#c9a227] hover:bg-[#8b6918]",
+  mobileHomeButtonClassName = "bg-[#253757] hover:bg-[#1d2b43]",
+}: HeaderProps) {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
       <div className="flex h-20 items-center justify-between px-4 md:px-20 bg-[rgba(0,0,0,0.24)] backdrop-blur-[35px]">
         {/* Logo */}
-        <div className="flex items-center text-xl font-semibold text-white md:text-3xl">
-          Royalbox
+        <div className="flex items-center text-sm font-semibold text-white md:text-2xl">
+          ROYAL-BOX
         </div>
 
 
@@ -41,7 +49,8 @@ export default function Header() {
         <div className="ml-auto hidden md:block">
           <Link
             href="/"
-            className="rounded-full bg-[#ff2432] px-6 py-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#ff3a45]"
+            className={`rounded-full px-6 py-4 text-sm font-semibold text-white shadow-sm transition-colors duration-700 ease-out ${homeButtonClassName}`}
+
           >
             На главную
           </Link>
@@ -61,7 +70,7 @@ export default function Header() {
 
 
       {open && (
-        <div className="absolute inset-x-0 top-20 bg-[#b51418] pb-3 pt-2 text-sm text-white shadow-md md:hidden">
+        <div className="absolute inset-x-0 top-20 bg-[#c9a227] pb-3 pt-2 text-sm text-white shadow-md md:hidden">
           <nav className="flex flex-col gap-2 px-4">
             {navItems.map((item) => (
               <Link
@@ -75,7 +84,7 @@ export default function Header() {
             ))}
             <Link
               href="/"
-              className="mt-1 rounded-full bg-[#ff2432] px-4 py-2 text-center font-semibold"
+              className={`mt-1 rounded-full px-4 py-2 text-center font-semibold transition-colors duration-500 ${mobileHomeButtonClassName}`}
               onClick={() => setOpen(false)}
             >
               На главную

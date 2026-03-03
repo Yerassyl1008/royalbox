@@ -9,45 +9,45 @@ const blocks = [
     id: 2,
     title: "Удобный поиск товаров",
     text: "Мы продолжаем улучшать сайт и приложение, для быстрого поиска нужной вещи",
-    image: "/photo-1.jpg",
+    image: "/dostavka2.png",
   },
   {
     id: 3,
     title: "Плати в рублях",
     text: "Доставляем заказы до пунктов выдачи и курьером по всей России.",
-    image: "/photo-1.jpg",
+    image: "/tinkof1.png",
   },
   {
     id: 4,
     title: "Логистика ",
-    text: "Сделай выбор товара, а мы позоботимься о скорой доставке прямо из Англий. Отслеживай весь путь от Лондона до своей двери.",
-    image: "/photo-1.jpg",
+    text: "Сделай выбор товара, а мы позоботимся о скорой доставке прямо из Англий. Отслеживай весь путь от Лондона до своей двери.",
+    image: "/image (6).png",
   },
   {
     id: 5,
     title: "Поддержка ",
-    text: "При возникновение вопросов с выбором, достовкой, браком, готовы в максимально быстрый срок разрешить все.",
+    text: "При возникновение вопросов с выбором, доставкой, браком, готовы в максимально быстрый срок разрешить их.",
     image: "/photo-1.jpg",
   },
 ];
 
 export default function Content() {
   return (
-    <section className="bg-[#1a1dd0] py-20 text-white">
+    <section className="bg-[#466481] py-20 text-white">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
         {/* Заголовок секции */}
-        <h2 className="mb-12 text-center text-3xl font-extrabold uppercase leading-tight md:text-5xl">
+        {/* <h2 className="mb-12 text-center text-3xl font-extrabold uppercase leading-tight md:text-5xl">
           С НАМИ ВЫГОДНО <br className="hidden md:block" /> И УДОБНО
-        </h2>
+        </h2> */}
 
         <div className="space-y-12">
           {blocks.map((block, index) => {
-            const isEven = index % 2 === 1;
+            const isEven = index % 2 === 0;
 
             return (
               <div
                 key={block.id}
-                className="relative overflow-hidden rounded-[32px] bg-[#1a1dd0] px-6 py-6 md:px-10 md:py-8 "
+                className="relative overflow-hidden rounded-[32px] bg-[#466481] px-6 py-6 md:px-10 md:py-8 "
               >
                 {/* Большой номер на фоне */}
                 <span className="pointer-events-none absolute left-4 top-0 text-[120px] font-extrabold leading-none text-white/5 md:left-6 md:text-[180px] ">
