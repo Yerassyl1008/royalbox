@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Catalog() {
   return (
-    <section className="px-4 py-12 md:px-8 md:py-16 text-white">
-       <div className="pb-16 w-full border-t border-dashed border-[#7f93ad] py-4" />
+    <section className="px-4 py-8 md:px-8 md:py-8 text-white">
+       {/* <div className="pb-16 w-full border-t border-dashed border-[#7f93ad] py-4" /> */}
       <div className="mx-auto max-w-5xl overflow-hidden rounded-[22px]  px-6 py-10 text-center   md:px-12 md:py-12">
         <h2 className="text-4xl font-semibold leading-tight tracking-wide md:text-3xl">
           Готовы обновить гардероб?

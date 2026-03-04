@@ -8,10 +8,14 @@ type HeaderProps = {
   mobileHomeButtonClassName?: string;
 };
 
-const navItems = [
-  { label: "Об условиях", href: "/condition" },
-  // { label: "Программа лояльности", href: "#loyalty" },
-  { label: "Помощь", href: "/return" },
+const helpItems = [{ label: "Помощь", href: "/return" }];
+
+const conditionItems = [
+  { label: "Доставки", href: "/condition" },
+  { label: "Возвраты", href: "/return" },
+  { label: "Пошлины", href: "/" },
+  // { label: "Оформление заказа", href: "/condition" },
+  // { label: "Чат", href: "/return" },
 ];
 
 const socialLinks = [
@@ -24,6 +28,7 @@ export default function Header({
   mobileHomeButtonClassName = "bg-[#253757] hover:bg-[#1d2b43]",
 }: HeaderProps) {
   const [open, setOpen] = useState(false);
+  const [mobileConditionsOpen, setMobileConditionsOpen] = useState(false);
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
@@ -34,60 +39,80 @@ export default function Header({
         </div>
 
 
-      <div className="flex items-center gap-8">
-        <nav className="mx-auto hidden items-center gap-8 text-sm text-white md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="flex items-center gap-1 transition-colors hover:text-gray-100"
-            >
-              <span>{item.label}</span>
-            </Link>
-          ))}
-          <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={social.label}
-                className="flex h-8 w-8 items-center justify-center text-white transition-opacity hover:opacity-80"
+        <div className="flex items-center gap-8">
+          <nav className="mx-auto hidden items-center gap-8 text-sm text-white md:flex">
+            <div className="group relative">
+              <button
+                type="button"
+                className="flex items-center gap-1 transition-colors hover:text-gray-100"
               >
-                {social.label === "Telegram" ? (
-                  <img
-                    src="/img/free-icon-telegram-2111646.png"
-                    alt="telegram icon"
-                    className="h-8 w-8 object-contain"
-                  />
-                ) : social.label === "VK" ? (
-                  <img
-                    src="/img/free-icon-vk-5968835.png"
-                    alt="vk icon"
-                    className="h-8 w-8 object-contain"
-                  />
+                <span>Об условиях</span>
+                <span className="text-[10px] leading-none">▾</span>
+              </button>
 
-                ) : (
-                  <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" aria-hidden="true">
-                    <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
-                  </svg>
-                )}
-              </a>
+              <div className="invisible absolute left-0 top-full z-50 w-56 pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                <div className="overflow-hidden rounded-2xl border border-[#d8dde4] bg-white py-2 shadow-xl">
+                  {conditionItems.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="block px-4 py-2 text-sm font-semibold text-black transition-colors hover:bg-[#edf1f5]"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {helpItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex items-center gap-1 transition-colors hover:text-gray-100"
+              >
+                <span>{item.label}</span>
+              </Link>
             ))}
+
+            <div className="flex items-center gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={social.label}
+                  className="flex h-8 w-8 items-center justify-center text-white transition-opacity hover:opacity-80"
+                >
+                  {social.label === "Telegram" ? (
+                    <img
+                      src="/img/free-icon-telegram-2111646.png"
+                      alt="telegram icon"
+                      className="h-8 w-8 object-contain"
+                    />
+                  ) : (
+                    <img
+                      src="/img/free-icon-vk-5968835.png"
+                      alt="vk icon"
+                      className="h-8 w-8 object-contain"
+                    />
+                  )}
+                </a>
+              ))}
+            </div>
+          </nav>
+
+          <div className="ml-auto hidden md:block">
+            <Link
+              href="/"
+              className={`rounded-full px-6 py-4 text-sm font-semibold text-white shadow-sm transition-colors duration-700 ease-out ${homeButtonClassName}`}
+            >
+              На главную
+            </Link>
           </div>
-        </nav>
-
-        <div className="ml-auto hidden md:block">
-          <Link
-            href="/"
-            className={`rounded-full px-6 py-4 text-sm font-semibold text-white shadow-sm transition-colors duration-700 ease-out ${homeButtonClassName}`}
-
-          >
-            На главную
-          </Link>
         </div>
-        </div>
+
         <button
           type="button"
           className="ml-auto flex h-8 w-11 shrink-0 flex-col items-center justify-center gap-1 rounded-full border border-white/40 text-white md:hidden"
@@ -104,7 +129,36 @@ export default function Header({
       {open && (
         <div className="absolute inset-x-0 top-20 bg-[#466481] pb-3 pt-2 text-sm text-white shadow-md md:hidden">
           <nav className="flex flex-col gap-2 px-4">
-            {navItems.map((item) => (
+            <button
+              type="button"
+              className="flex items-center justify-between py-1 text-left"
+              onClick={() => setMobileConditionsOpen((prev) => !prev)}
+            >
+              <span>Об условиях</span>
+              <span className={`text-[10px] transition-transform ${mobileConditionsOpen ? "rotate-180" : ""}`}>
+                ▾
+              </span>
+            </button>
+
+            {mobileConditionsOpen && (
+              <div className="ml-2 rounded-xl bg-white/10 py-1">
+                {conditionItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="block px-3 py-1.5 text-white/95"
+                    onClick={() => {
+                      setOpen(false);
+                      setMobileConditionsOpen(false);
+                    }}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+
+            {helpItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -116,7 +170,7 @@ export default function Header({
             ))}
             <Link
               href="/"
-              className={`mt-1 rounded-full px-4 py-2 text-center font-semibold transition-colors duration-500 ${mobileHomeButtonClassName}`}
+              className={`rounded-full px-4 py-2 text-center font-semibold transition-colors duration-500 ${mobileHomeButtonClassName}`}
               onClick={() => setOpen(false)}
             >
               На главную
