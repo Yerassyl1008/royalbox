@@ -102,7 +102,7 @@ export default function Header({
 
 
       {open && (
-        <div className="absolute inset-x-0 top-20 bg-[#c9a227] pb-3 pt-2 text-sm text-white shadow-md md:hidden">
+        <div className="absolute inset-x-0 top-20 bg-[#466481] pb-3 pt-2 text-sm text-white shadow-md md:hidden">
           <nav className="flex flex-col gap-2 px-4">
             {navItems.map((item) => (
               <Link
