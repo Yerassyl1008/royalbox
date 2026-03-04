@@ -90,13 +90,13 @@ export default function Header({
         </div>
         <button
           type="button"
-          className="ml-auto flex items-center justify-center rounded-full border border-white/40 p-1 text-white md:hidden"
+          className="ml-auto flex h-8 w-11 shrink-0 flex-col items-center justify-center gap-1 rounded-full border border-white/40 text-white md:hidden"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Открыть меню"
         >
-          <span className="block h-0.5 w-5 bg-white" />
-          <span className="mt-1 block h-0.5 w-5 bg-white" />
-          <span className="mt-1 block h-0.5 w-5 bg-white" />
+          <span className="block h-0.5 w-5 rounded-full bg-white" />
+          <span className="block h-0.5 w-5 rounded-full bg-white" />
+          <span className="block h-0.5 w-5 rounded-full bg-white" />
         </button>
       </div>
 
