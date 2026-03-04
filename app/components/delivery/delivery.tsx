@@ -1,6 +1,8 @@
 export default function Delivery() {
   return (
+    
     <section className="flex flex-row justify-center bg-[#466481] py-20 text-white pt-40 pb-24">
+      
       <div className="flex flex-col items-center justify-center mx-auto max-w-6xl px-4 md:px-8 gap-2">
         <h2 className="text-4xl font-semibold leading-tight tracking-wide md:text-3xl">
           Доставка из Англии

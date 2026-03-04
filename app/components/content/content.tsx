@@ -1,33 +1,33 @@
 const blocks = [
   {
     id: 1,
-    title: "RoyalBox собрал в себе самое лучшее",
+    title: "ROYALBOX СОБРАЛ В СЕБЕ ЛУЧШЕЕ",
     text: "Платформа включает в себя лучшие и популярные бренды англиских, европейских и амереканских товаров. И продалжает развиватся.",
-    image: "/photo-1.jpg",
+    image: "/img/7328ca2c-559d-4765-bc16-abd461b1aeb4.jpg",
   },
   {
     id: 2,
     title: "Удобный поиск товаров",
-    text: "Мы продолжаем улучшать сайт и приложение, для быстрого поиска нужной вещи",
-    image: "/dostavka2.png",
+    text: "Мы продолжаем улучшать сайт и приложение,\nдля быстрого поиска нужной вещи",
+    image: "/img/774608b2-9857-4e64-9847-46d60503aa52.jpg",
   },
   {
     id: 3,
     title: "Плати в рублях",
-    text: "Доставляем заказы до пунктов выдачи и курьером по всей России.",
-    image: "/tinkof1.png",
+    text: "Выбери свой удобный способ оплаты. \nЛюбая карта российского банка.",
+    image: "/img/532ff57a-8e66-4e87-84e9-fddcffd8051b.jpg",
   },
   {
     id: 4,
     title: "Логистика ",
-    text: "Сделай выбор товара, а мы позоботимся о скорой доставке прямо из Англий. Отслеживай весь путь от Лондона до своей двери.",
-    image: "/image (6).png",
+    text: "Сделай выбор товара, а мы позоботимся о скорой \nдоставке прямо из Англий. Отслеживай весь путь \n от Лондона до своей двери.",
+    image: "/img/1533511f-7461-49b1-a316-b273fae859fb.jpg",
   },
   {
     id: 5,
     title: "Поддержка ",
-    text: "При возникновение вопросов с выбором, доставкой, браком, готовы в максимально быстрый срок разрешить их.",
-    image: "/photo-1.jpg",
+    text: "При возникновении вопросов с выбором, доставкой, браком, готовы в максимально быстрый срок разрешить их.",
+    image: "/img/b6dc1dfa-1248-449c-96eb-e2efed92e697.jpg",
   },
 ];
 
@@ -50,9 +50,9 @@ export default function Content() {
                 className="relative overflow-hidden rounded-[32px] bg-[#466481] px-6 py-6 md:px-10 md:py-8 "
               >
                 {/* Большой номер на фоне */}
-                <span className="pointer-events-none absolute left-4 top-0 text-[120px] font-extrabold leading-none text-white/5 md:left-6 md:text-[180px] ">
+                {/* <span className="pointer-events-none absolute left-4 top-0 text-[120px] font-extrabold leading-none text-white/5 md:left-6 md:text-[180px] ">
                   {block.id}
-                </span>
+                </span> */}
 
                 <div className="grid gap-8 md:grid-cols-2 md:items-center gap-[70px]">
                   {/* Блок с картинкой */}
@@ -70,10 +70,10 @@ export default function Content() {
 
                   {/* Текстовый блок */}
                   <div className={isEven ? "md:order-1" : ""}>
-                    <h3 className="mb-4 text-2xl font-extrabold uppercase md:text-3xl">
+                    <h3 className="mb-2 text-2xl font-extrabold uppercase md:text-2xl">
                       {block.title}
                     </h3>
-                    <p className="max-w-md text-sm leading-relaxed md:text-base">
+                    <p className="max-w-md whitespace-pre-line text-sm leading-relaxed md:text-base">
                       {block.text}
                     </p>
                   </div>
@@ -83,6 +83,7 @@ export default function Content() {
           })}
         </div>
       </div>
+     
     </section>
   );
 }

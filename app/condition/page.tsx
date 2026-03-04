@@ -6,10 +6,7 @@ export default function Condition() {
 
   return (
     <div>
-      <Header
-        homeButtonClassName="bg-[#466481] hover:bg-[#38556d]"
-        mobileHomeButtonClassName="bg-[#38556d] hover:bg-[#2f495e]"
-      />
+      <Header />
       <Delivery />
       <Customer />
     </div>

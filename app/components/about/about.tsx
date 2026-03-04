@@ -3,7 +3,7 @@ export default function About() {
     <section className="relative overflow-hidden bg-[#c9a227] text-white">
       {/* Текстовый контейнер слева */}
       <div className=" flex flex-row justify-center mx-auto max-w-6xl px-4 pt-28 pb-24 md:px-8 md:pt-32">
-        <div className="flex flex-col items-center justify-center max-w-[400px] text-center md:text-left pt-[50px] pb-[10px]">
+        <div className="flex flex-col items-center justify-center text-center md:text-left pt-[50px] pb-[10px]">
           <h1 className="text-3xl font-extrabold uppercase leading-tight mb-2">
             С НАМИ НАДЕЖНО И КОМФОРТНО
           </h1>
