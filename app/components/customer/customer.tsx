@@ -47,9 +47,9 @@ export default function Customer() {
                 className="relative overflow-hidden rounded-[32px] bg-[#466481] px-6 py-6 md:px-10 md:py-8 "
               >
                 {/* Большой номер на фоне */}
-                <span className="pointer-events-none absolute left-4 top-0 text-[120px] font-extrabold leading-none text-white/5 md:left-6 md:text-[180px] ">
+                {/* <span className="pointer-events-none absolute left-4 top-0 text-[120px] font-extrabold leading-none text-white/5 md:left-6 md:text-[180px] ">
                   {block.id}
-                </span>
+                </span> */}
 
                 <div className="grid gap-8 md:grid-cols-2 md:items-center gap-[70px]">
                   {/* Блок с картинкой */}
