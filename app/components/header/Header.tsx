@@ -11,6 +11,7 @@ type HeaderProps = {
 const helpItems = [{ label: "Помощь", href: "#" }];
 
 const conditionItems = [
+  { label: "О нас", href: "/main-page" },
   { label: "Доставки", href: "/condition" },
   { label: "Возврата", href: "/return" },
   { label: "Пошлин", href: "/powlin" },
