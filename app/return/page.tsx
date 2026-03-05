@@ -9,8 +9,8 @@ export default function Return() {
           Условия возврата
         </h1>
       </section>
-      <main className="mx-auto max-w-6xl px-6 pb-20 pt-12 md:px-10">
-        <section className="mb-16">
+      <main className="mx-auto max-w-6xl px-6 pb-20 pt-18 md:px-10">
+        <section className="mb-18">
           <h2 className="mb-6 text-5xl font-extrabold uppercase leading-none md:text-2xl">
             Отмена и изменение заказа
           </h2>
