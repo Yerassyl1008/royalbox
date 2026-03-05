@@ -4,7 +4,7 @@ export default function Delivery() {
     <section className="flex flex-row justify-center bg-[#c9a227] py-20 text-white pt-40 pb-24">
       
       <div className="flex flex-col items-center justify-center mx-auto max-w-6xl px-4 md:px-8 gap-2">
-        <h2 className="text-4xl font-semibold leading-tight tracking-wide md:text-3xl">
+        <h2 className="text-4xl text-center font-extrabold leading-tight tracking-wide md:text-4xl">
           Доставка из Англии
         </h2>
         <p className="text-sm  leading-tight tracking-wide md:text-base">14-17 дней до Москвы</p>

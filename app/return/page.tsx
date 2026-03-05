@@ -4,8 +4,8 @@ export default function Return() {
   return (
     <div className="bg-[#466481] text-white">
       <Header />
-      <section className="bg-[#c9a227] pb-8 pt-28 md:pb-20 md:pt-42">
-        <h1 className="mx-auto max-w-6xl px-6 text-center text-5xl font-extrabold uppercase leading-none text-white md:px-10 md:text-6xl">
+      <section className="bg-[#c9a227]  py-35 ">
+        <h1 className="mx-auto max-w-6xl text-center text-4xl font-extrabold uppercase leading-none text-white  md:text-4xl pt-15">
           Условия возврата
         </h1>
       </section>

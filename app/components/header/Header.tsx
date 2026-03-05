@@ -8,19 +8,19 @@ type HeaderProps = {
   mobileHomeButtonClassName?: string;
 };
 
-const helpItems = [{ label: "Помощь", href: "/return" }];
+const helpItems = [{ label: "Помощь", href: "#" }];
 
 const conditionItems = [
   { label: "Доставки", href: "/condition" },
-  { label: "Возвраты", href: "/return" },
-  { label: "Пошлины", href: "/" },
+  { label: "Возврата", href: "/return" },
+  { label: "Пошлин", href: "/powlin" },
   // { label: "Оформление заказа", href: "/condition" },
   // { label: "Чат", href: "/return" },
 ];
 
 const socialLinks = [
-  { label: "Telegram", href: "https://t.me" },
-  { label: "VK", href: "https://vk.com" },
+  { label: "Telegram", href: "https://t.me/royalbox78 " },
+  { label: "VK", href: " https://vk.com/1royalbox" },
 ];
 
 export default function Header({
@@ -34,9 +34,12 @@ export default function Header({
     <header className="absolute inset-x-0 top-0 z-30">
       <div className="flex h-20 items-center justify-between bg-[#354c62] px-4 md:px-20">
         {/* Logo */}
+        <Link href="/main-page" className="flex items-center text-sm font-semibold text-white md:text-2xl"> 
         <div className="flex items-center text-sm font-semibold text-white md:text-2xl">
           ROYAL-BOX
+         
         </div>
+        </Link>
 
 
         <div className="flex items-center gap-8">
