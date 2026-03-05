@@ -20,7 +20,7 @@ export default function Powlin() {
           <p className="text-lg leading-relaxed md:text-xl">Ваш заказ стоимостью 30 000 ₽, то есть €300. <br />
 В данном случае таможенный бесплатный лимит превышает на €100. <br />
 Пошлина за €100 составляет €15. <br /></p>
-          <p className="text-lg leading-relaxed md:text-xl">Для удобства примера расчета мы взяли курс €1 = 100₽</p>
+          <p className="text-lg leading-relaxed md:text-xl">Для удобства примера расчета мы взяли курс €1 = 100 ₽</p>
         </div>
       </section>
     </div>
