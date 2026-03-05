@@ -11,10 +11,10 @@ export default function Return() {
       </section>
       <main className="mx-auto max-w-6xl px-6 pb-20 pt-12 md:px-10">
         <section className="mb-16">
-          <h2 className="mb-6 text-5xl font-extrabold uppercase leading-none md:text-3xl">
+          <h2 className="mb-6 text-5xl font-extrabold uppercase leading-none md:text-2xl">
             Отмена и изменение заказа
           </h2>
-          <ul className="list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-3xl">
+          <ul className="list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-2xl">
             <li>
               Срок для отмены: Вы можете полностью отменить заказ в течение 1
               часа после оплаты.
@@ -36,10 +36,10 @@ export default function Return() {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-6 text-5xl font-extrabold uppercase leading-none md:text-3xl">
+          <h2 className="mb-6 text-5xl font-extrabold uppercase leading-none md:text-2xl">
             Что делать, если с товаром что то не так?
           </h2>
-          <ul className="list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-3xl">
+          <ul className="list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-2xl">
             <li>
               Мы вернем деньги, если вещь пришла с повреждениями: пятнами,
               дырками или явными дефектами пошива.
@@ -60,10 +60,10 @@ export default function Return() {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-6 text-5xl font-extrabold uppercase leading-none md:text-3xl">
+          <h2 className="mb-6 text-5xl font-extrabold uppercase leading-none md:text-2xl">
             Можно ли вернуть товар, если я передумал?
           </h2>
-          <p className="text-xl leading-relaxed md:text-4xl">
+          <p className="text-xl leading-relaxed md:text-2xl">
             Товары выкупаются с магазинов (складов) Великобритании, и сроки
             международной пересылки превышают время, отведенное брендами на
             возврат. Пожалуйста, внимательно сверяйтесь с размерной сеткой
@@ -72,19 +72,19 @@ export default function Return() {
         </section>
 
         <section>
-          <h2 className="mb-6 text-3xl font-extrabold uppercase leading-none md:text-3xl">
+          <h2 className="mb-6 text-3xl font-extrabold uppercase leading-none md:text-2xl">
             Отмена заказа магазином
           </h2>
-          <h3 className="mb-4 text-3xl  md:text-3xl">
+          <h3 className="mb-4 text-3xl  md:text-2xl">
             Если товара не оказалось в наличии
           </h3>
-          <p className="mb-5 text-xl leading-relaxed md:text-3xl">
+          <p className="mb-5 text-xl leading-relaxed md:text-2xl">
             Платформа выкупает заказы напрямую со складов Великобритании и
             стран ЕС. Иногда склад - магазин сообщает об отсутствии позиции уже
             в процессе сборки. В этом случае происходит автоматическая отмена
             вашего заказа.
           </p>
-          <ul className="mb-10 list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-3xl">
+          <ul className="mb-10 list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-2xl">
             <li>
               Возврат средств: Как только склад - магазин вернет деньги, они
               моментально зачислятся на ваш банковский баланс. На практике это
@@ -92,24 +92,24 @@ export default function Return() {
             </li>
           </ul>
 
-          <h3 className="mb-4 text-4xl font-extrabold uppercase md:text-3xl">
+          <h3 className="mb-4 text-4xl font-extrabold uppercase md:text-2xl">
             Порядок действий при обнаружении брака:
           </h3>
-          <p className="mb-5 text-xl leading-relaxed md:text-3xl">
+          <p className="mb-5 text-xl leading-relaxed md:text-2xl">
             Если вы обнаружили дефект, пожалуйста, напишите нам в чат как можно
             скорее с момента получения. Приложите номер заказа и фото товара (с
             бирками) и упаковки.
           </p>
 
-          <h4 className="mb-4 text-3xl font-bold md:text-5xl">Важные условия:</h4>
-          <ul className="mb-10 list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-3xl">
+          <h4 className="mb-4 text-3xl font-bold md:text-2xl">Важные условия:</h4>
+          <ul className="mb-10 list-disc space-y-3 pl-8 text-xl leading-relaxed md:text-2xl">
             <li>Принимаются только новые вещи без следов использования в оригинальной упаковке.</li>
             <li>Отправляйте возврат в коробке с нашим стикером.</li>
             <li>Обязательно согласуйте отправку с поддержкой, иначе сроки обработки увеличатся.</li>
           </ul>
 
-          <h4 className="mb-4 text-3xl font-bold md:text-3xl">Возврат средств:</h4>
-          <p className="text-xl leading-relaxed md:text-3xl">
+          <h4 className="mb-4 text-3xl font-bold md:text-2xl">Возврат средств:</h4>
+          <p className="text-xl leading-relaxed md:text-2xl">
             Великобритании. Средства вернутся на ваш банковский счет после
             оформления возврата магазином. Весь цикл занимает от 30 до 45 дней.
           </p>
